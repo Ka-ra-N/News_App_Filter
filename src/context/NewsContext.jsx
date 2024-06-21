@@ -30,7 +30,7 @@ export const NewsProvider = ({ children }) => {
   const url = `https://newsapi.org/v2/everything?q=${query}&pageSize=10&page=`;
 
   // API key for the News API
-  const apiKey = import.meta.env.VITE_API_KEY;
+  const apiKey = 45b45ce96f3740fc91567c6ed2e04697;
 
   // Function to fetch news data from the API
   const fetchNews = async (page = 1) => {
