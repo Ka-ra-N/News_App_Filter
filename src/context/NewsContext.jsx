@@ -29,16 +29,13 @@ export const NewsProvider = ({ children }) => {
   // Base URL for the News API
   const url = `https://newsapi.org/v2/everything?q=${query}&pageSize=10&page=`;
 
-  // API key for the News API
-  const apiKey = import.meta.env.VITE_API_KEY;
-
   // Function to fetch news data from the API
   const fetchNews = async (page = 1) => {
     // Set loading to true to indicate that a fetch operation is in progress
     setLoading(true);
     try {
       // Make the API call
-      const response = await fetch(`${url}${page}&apiKey=${apiKey}`);
+      const response = await fetch(`${url}${page}&apiKey=45b45ce96f3740fc91567c6ed2e04697`);
 
       // Parse the response JSON data
       const data = await response.json();
